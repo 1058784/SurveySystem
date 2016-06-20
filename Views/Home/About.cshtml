@@ -1,0 +1,30 @@
+﻿@model IEnumerable<SurveySystem.ViewModels.SurveyRespondents>
+
+@{
+    ViewBag.Title = "Statistics";
+}
+
+<h2>Survey Respondents Statistics</h2>
+
+<table>
+    <tr>
+        <th>
+            Survey
+        </th>
+        <th>
+            Respondents
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @item.RespondentCount
+            </td>
+        </tr>
+    }
+</table>
