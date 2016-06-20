@@ -7,8 +7,8 @@ namespace SurveySystem.Models
 {
     public class MultiChoise : Question
     {
-//        [Required]
+        [Required]
         public bool NullOrMultiAllowed { get; set; }
-//        public virtual Survey Survey { get; set; }
+
     }
 }
